@@ -1,0 +1,23 @@
+.links-footer{
+  color: grey;
+}
+.links-footer:hover{
+color: white;
+transition: all ease 0.5s;
+}
+.icons-footer{
+  color: grey;
+}
+.icons-footer:hover{
+  color: white;
+  transition: all ease 0.5s;
+}
+#boton-footer{
+border: solid 1px grey;
+color: grey;
+}
+#boton-footer:hover{
+  border: solid 1px white;
+  color: white;
+  transition: all ease 0.5s;
+  }

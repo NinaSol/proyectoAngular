@@ -1,0 +1,38 @@
+
+.wrap {
+  width: 250px;
+  height: 420px;
+  perspective: 1000px;
+}
+.post {
+  position: relative; /* Required to absolutely position the child faces */
+  width: 250px;
+  height: 100%;
+}
+.front, .back {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: rgb(0, 0, 0,0.5);
+  color: white;
+}
+.front, .back {
+  /* Existing styles here */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.wrap:hover .post {
+  transform: rotateY(180deg);
+}
+.post {
+  /* Existing styles here */
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-img-top{
+width: 250px;
+}

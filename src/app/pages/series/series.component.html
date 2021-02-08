@@ -1,0 +1,17 @@
+<br>
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4" *ngFor="let personaje of personajes">
+      <div class="card">
+        <img src={{personaje.image}} class="card-img-top" alt="rick and morty personajes">
+        <div class="card-body">
+          <h5 class="card-title">{{personaje.name}}</h5>
+          <p class="card-text">Status: {{personaje.status}}</p>
+          <p class="card-text">Epecie: {{personaje.species}}</p>
+          <p class="card-text">Genero: {{personaje.gender}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
